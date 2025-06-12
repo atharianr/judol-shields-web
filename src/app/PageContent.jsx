@@ -70,7 +70,7 @@ export default function PageContent() {
                     {
                         activityArray
                             .sort(() => 0.5 - Math.random()) // shuffle
-                            .slice(0, 5) // take first 3
+                            .slice(0, 3) // take first 3
                             .map((data, index) => (
                                 <li key={index} className="text-[#6B6FC2] text-l6">
                                     {data}
@@ -78,6 +78,16 @@ export default function PageContent() {
                             ))
                     }
                 </ul>
+                <p className="text-[#6B6FC2] text-l mt-2 ml-36">
+                    Lagi butuh bantuan soal judi online? Hubungi{" "}
+                    <a href="tel:081110015080" className="font-bold underline hover:text-[#4c50a3]">
+                        0811-1001-5080
+                    </a>{" "}
+                    atau cek{" "}
+                    <a href="https://aduankonten.id" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-[#4c50a3]">
+                        aduankonten.id
+                    </a>
+                </p>
                 <button
                     onClick={() => window.history.back()}
                     className="w-fit bg-[#2F3396] text-white text-xl font-medium px-12 py-3 mt-8 ml-36 rounded-2xl cursor-pointer hover:bg-[#2F3396]/80 hover:shadow-sm duration-200"
