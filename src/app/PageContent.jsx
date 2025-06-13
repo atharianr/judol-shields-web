@@ -103,12 +103,21 @@ export default function PageContent() {
                         aduankonten.id
                     </a>
                 </p>
-                <button
-                    onClick={() => window.history.back()}
-                    className="w-fit bg-[#2F3396] text-white text-xl font-medium px-12 py-3 mt-8 ml-36 rounded-2xl cursor-pointer hover:bg-[#2F3396]/80 hover:shadow-sm duration-200"
-                >
-                    Kembali
-                </button>
+                <div className="flex">
+                    <Link
+                        href="/chat"
+                        className="w-fit bg-[#2F3396] text-white text-xl font-medium px-6 py-3 mt-8 ml-36 rounded-2xl cursor-pointer hover:bg-[#2F3396]/80 hover:shadow-sm duration-200 inline-block text-center"
+                    >
+                        JudolShields Consultation
+                    </Link>
+                    <button
+                        href="/chat"
+                        onClick={() => window.history.back()}
+                        className="w-fit border-[#2F3396] border-2 text-[#2F3396] text-xl font-medium px-12 py-3 mt-8 ml-2 rounded-2xl cursor-pointer hover:bg-[#2F3396]/20 hover:shadow-sm duration-200"
+                    >
+                        Kembali
+                    </button>
+                </div>
             </div>
             <div className="flex w-full items-center justify-center">
                 <img src="./assets/OnlineGamblingIllustration.svg" alt="Online Gambling Illustration" draggable="false" className="h-[400px] w-fit" />

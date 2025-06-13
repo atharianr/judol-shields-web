@@ -1,11 +1,9 @@
 import { useCallback, useEffect, useRef } from "react";
 import ChatBox from "./components/ChatBox";
 import ChatBubble from "./components/ChatBubble";
-import SecretModal from "./components/SecretModal";
 import { getChatSessionList, sendMessage } from "../services/chat-service";
 import { useChat } from "./contexts/ChatContext";
 import { useLoading } from "./contexts/LoadingContext";
-import { useSecret } from "./contexts/SecretContext";
 import { useError } from "./contexts/ErrorContext";
 import ErrorModal from "./components/ErrorModal";
 
@@ -13,7 +11,6 @@ export default function PageContent() {
     const {
         chatHistoryList,
         setChatHistoryList,
-        chatSessionList,
         setChatSessionList,
         currentChatSessionId,
         setCurrentChatSessionId,
@@ -21,7 +18,6 @@ export default function PageContent() {
 
 
     const { isLoadingResponse, setIsLoadingResponse } = useLoading();
-    const { secret } = useSecret();
 
     const { setIsError } = useError();
 
