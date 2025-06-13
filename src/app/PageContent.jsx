@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PageContent() {
     const activityArray = [
         "Ngobrol santai sambil ngopi atau ngeteh bareng keluarga di teras rumah.",
@@ -79,12 +81,25 @@ export default function PageContent() {
                     }
                 </ul>
                 <p className="text-[#6B6FC2] text-l mt-2 ml-36">
-                    Lagi butuh bantuan soal judi online? Hubungi{" "}
+                    Lagi butuh bantuan soal judi online?
+                    {" "}Langsung{" "}
+                    <Link
+                        href="/chat"
+                        className="font-bold underline hover:text-[#4c50a3]"
+                    >
+                        konsultasi bareng MinShield di sini
+                    </Link>{" "}
+                    atau hubungi{" "}
                     <a href="tel:081110015080" className="font-bold underline hover:text-[#4c50a3]">
                         0811-1001-5080
                     </a>{" "}
                     atau cek{" "}
-                    <a href="https://aduankonten.id" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-[#4c50a3]">
+                    <a
+                        href="https://aduankonten.id"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-bold underline hover:text-[#4c50a3]"
+                    >
                         aduankonten.id
                     </a>
                 </p>
